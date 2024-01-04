@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+body {
+    background: url("./img/weatherappbackground.webp");     
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.383);
+    margin: auto -16px;
+    padding: 16px 32px;
+  }
+form {
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+input {
+    width: 300px;
+    height: 40px;
+    margin-right: 0px;
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgba(245, 245, 245, 0.621);
+    padding: 5px 5px;
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+.button {
+    background-color: rgba(249, 246, 243, 0);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 575px;
+    background-image: url('img/weatherappsearchbutton.png');
+    border: none;
+    border-radius: 50px;
+}
+.description {
+    margin: 10px auto;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.weather {
+    background-color: rgba(255, 255, 255, 0.464);
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 450px;
+    margin: 40px 30px;
+    padding: 10px;
+}
+.weatherDetail {
+    display: flex;
+    flex-direction: row;
+    
+}
+.weatherDetail :hover {
+    color: black;
+}
