@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import WeatherDisplay from "./WeatherDisplay";
 import Events from "./Events"
-
+import "./search.css";
 
 const RADAR_API_KEY = "prj_test_pk_bc98832a3852b7f7969e08b3d319fd70e13d2d77";
 const WEATHER_API_KEY = "18a3631b896350dd1d53a177819cffbd";
@@ -100,7 +100,8 @@ const Search = ({onSearch}) => {
             <input type="text" id="lname" name="city" 
             value={location} onChange={(e) => 
             setLocation(e.target.value)} placeholder="city name..."/>
-            <button className="button" type="submit" onClick={handleClick}></button>
+            <button className="button" type="submit" onClick={handleClick} ></button>
+            
         </form>
         {isButtonClicked? <h2 className="description">{cityName}</h2> : <h2 className="description">Brings Up Five Days of Forecasts with Events in your City</h2>}
         

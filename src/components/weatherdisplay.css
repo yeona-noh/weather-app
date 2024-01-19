@@ -1,0 +1,24 @@
+.currentTemp {
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 12px;
+}
+.time {
+    font-size: 15px;
+    font-weight: bold;
+}
+.icon {
+    width: 30px;
+}
+.weather {
+    height: 250px;
+    border-radius: 5px;
+    width: 450px;
+    margin: 40px 30px;
+    padding: 10px;
+}
+.weatherIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

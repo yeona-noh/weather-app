@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+.App {
+    background: url("../public/img/clearsky.jpg");     
+    /* background-image: linear-gradient(to bottom right, rgb(1, 132, 25), rgb(39, 157, 120)); */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: fixed;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
