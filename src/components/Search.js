@@ -88,8 +88,6 @@ const Search = ({onSearch}) => {
         setCityName(location.toUpperCase())
         console.log(main)
         setEventData(events)
-        console.log(events)
-        console.log(Math.round(weatherData[0].main.temp))
     }
 
 
