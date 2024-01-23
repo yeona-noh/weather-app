@@ -4,9 +4,9 @@ import WeatherDisplay from "./WeatherDisplay";
 import Events from "./Events"
 import "./search.css";
 
-const RADAR_API_KEY = "prj_test_pk_bc98832a3852b7f7969e08b3d319fd70e13d2d77";
-const WEATHER_API_KEY = "18a3631b896350dd1d53a177819cffbd";
-const SEATGEEK_API_KEY = "Mzk0NjkwMTF8MTcwNTM0NTMyMC41OTc3NTEx";
+const RADAR_API_KEY = process.env.REACT_APP_RADAR_API_KEY;
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+const SEATGEEK_API_KEY = process.env.REACT_APP_SEATGEEK_API_KEY;
 
 const Search = ({onSearch}) => {
     const [isButtonClicked, setButtonClicked] = useState(false);
@@ -16,6 +16,7 @@ const Search = ({onSearch}) => {
 
     const getCoordinate = async (city) => {
         try {
+            console.log(RADAR_API_KEY)
             let res = await axios.get("https://api.radar.io/v1/geocode/forward",{
                 params: { query: city },
                 headers: { Authorization: RADAR_API_KEY }
