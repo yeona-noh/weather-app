@@ -89,6 +89,7 @@ const Search = ({onSearch}) => {
         console.log(main)
         setEventData(events)
         console.log(events)
+        console.log(Math.round(weatherData[0].main.temp))
     }
 
 
@@ -114,10 +115,10 @@ const Search = ({onSearch}) => {
                     date={data.dt_txt.split(" ")[0].slice(5)}
                     weather={data.weather[0].main}
                     icon={data.weather[0].icon}
-                    feels={data.main.feels_like}
-                    temp={data.main.temp}
-                    temp_max={data.main.temp_max}
-                    temp_min={data.main.temp_min}
+                    feels={Math.round(data.main.feels_like)}
+                    temp={Math.round(data.main.temp)}
+                    temp_max={Math.round(data.main.temp_max)}
+                    temp_min={Math.round(data.main.temp_min)}
                     />
             )
         })}
