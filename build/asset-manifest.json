@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21623728.css",
+    "main.js": "/static/js/main.23340cec.js",
+    "static/media/clearsky.jpg": "/static/media/clearsky.10c5f88ed928b23e1f25.jpg",
+    "index.html": "/index.html",
+    "main.21623728.css.map": "/static/css/main.21623728.css.map",
+    "main.23340cec.js.map": "/static/js/main.23340cec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21623728.css",
+    "static/js/main.23340cec.js"
+  ]
+}
