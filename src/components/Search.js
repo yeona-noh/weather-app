@@ -16,7 +16,6 @@ const Search = ({onSearch}) => {
 
     const getCoordinate = async (city) => {
         try {
-            console.log(RADAR_API_KEY)
             let res = await axios.get("https://api.radar.io/v1/geocode/forward",{
                 params: { query: city },
                 headers: { Authorization: RADAR_API_KEY }
@@ -87,7 +86,6 @@ const Search = ({onSearch}) => {
         let events = await getEvents(lat,lon)
         setWeatherData(main);
         setCityName(location.toUpperCase())
-        console.log(main)
         setEventData(events)
     }
 
